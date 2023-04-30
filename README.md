@@ -69,7 +69,7 @@ You can create custom forms for surveys and questionnaires!
 - Try-Catch and Laravel Exceptions are used.
 
 ### Sample Api Requests
-- For Register 
+- For Register <br>
     {
         "headers": {
             "Accept": "application/json",
@@ -81,7 +81,7 @@ You can create custom forms for surveys and questionnaires!
         "confirm_password": "12345678"
     }
 
-- For Login
+- For Login <br>
     {
         "headers": {
             "Accept": "application/json",
@@ -91,7 +91,7 @@ You can create custom forms for surveys and questionnaires!
         "password": "12345678"
     }
     
-- For Logout
+- For Logout <br>
     {
         "headers": {
             "Accept": "application/json",
@@ -99,9 +99,8 @@ You can create custom forms for surveys and questionnaires!
             "Authorization": "Bearer 3|L2iHvnUcrUioRk0w6OR7E4njTyWi5VhZpbjRG4xT"
         },
     }
-- For Survey Post
-    {   
-        "headers": {
+- For Survey Post <br>
+    {   "headers": {
             "Accept": "application/json",
             "Content-Type": "application/json",
             "Authorization": "Bearer 3|L2iHvnUcrUioRk0w6OR7E4njTyWi5VhZpbjRG4xT"
