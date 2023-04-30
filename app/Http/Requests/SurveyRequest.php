@@ -27,7 +27,7 @@ class SurveyRequest extends FormRequest
     public function rules()
     {
         return [
-            'form_id' => 'required',
+            'form_id' => 'required|integer',
         ];
     }
 }

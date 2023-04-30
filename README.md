@@ -32,7 +32,7 @@
 
 ### Quick Installation
 
-    > git clone https://github.com/
+    > git clone https://github.com/Htet-Lin-Aung/laravel-practical-test
     > cd laravel-practical-test
     > composer install or composer update
     > cp .env.example .env
@@ -53,8 +53,8 @@ You can create custom forms for surveys and questionnaires!
   - include dynamic form inputs by default input types(text, date picker, number).
 
 #### Public Form
--resources\view\home
-  -Sample dynamic form blade
+- resources\view\home
+  - Sample dynamic form blade
 
 <hr>
 
@@ -67,3 +67,58 @@ You can create custom forms for surveys and questionnaires!
 
 #### Debugging Errors
 - Try-Catch and Laravel Exceptions are used.
+
+### Sample Api Requests
+- For Register 
+    {
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        "name": "User Name",
+        "email": "test@gmail.com",
+        "password": "12345678",
+        "confirm_password": "12345678"
+    }
+
+- For Login
+    {
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        "email": "test@gmail.com",
+        "password": "12345678"
+    }
+    
+- For Logout
+    {
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer 3|L2iHvnUcrUioRk0w6OR7E4njTyWi5VhZpbjRG4xT"
+        },
+    }
+- For Survey Post
+    {   
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer 3|L2iHvnUcrUioRk0w6OR7E4njTyWi5VhZpbjRG4xT"
+        },
+        "surveys": [
+            {
+                "code": "name",
+                "answer": "Name"
+            },
+            {
+                "code": "phone_number",
+                "answer": "No"
+            },
+            {
+                "code": "dob",
+                "answer": "2022-03-05"
+            }
+        ],
+        "form_id": 1
+    }
