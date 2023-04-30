@@ -4,8 +4,6 @@
 
 ### Requirements
 
-<hr>
-
 <table>
     <thead>
         <tr>
@@ -29,6 +27,7 @@
     </tbody>
 </table>
 
+<hr>
 
 ### Quick Installation
 
@@ -40,9 +39,10 @@
     > php artisan key:generate
     > php artisan migrate
     > php artisan serve
-    http://127.0.0.1:8000/
+    http://127.0.0.1:8000
+<hr>
 
-## Custom Forms
+#### Custom Form
 
 You can create custom forms for surveys and questionnaires!
 
@@ -67,6 +67,8 @@ You can create custom forms for surveys and questionnaires!
 
 #### Debugging Errors
 - Try-Catch and Laravel Exceptions are used.
+
+<hr>
 
 ### Sample Api Requests
 - For Register <br>
